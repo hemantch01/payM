@@ -1,13 +1,12 @@
 const express = require("express");
 import { Router } from "express";
-const mainRouter = require("./routes/index")
 const port = 3000;
 const app = express();
 app.use(express.json());
 app.use(cors());
+const mainRouter = require("./routes/index");
 
-
-Router.use("/v0", mainRouter);
+Router.use("/api/v1", mainRouter);
 
 
 app.listen(port);
