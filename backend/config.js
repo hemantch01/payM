@@ -1,1 +1,4 @@
-export const jwt_secret = "myjwtpassword";
+//backend/config.js
+module.exports = {
+	JWT_SECRET: "your-jwt-secret"
+}

@@ -1,12 +1,13 @@
-const express = require("express");
-import { Router } from "express";
-const port = 3000;
+// backend/index.js
+const express = require('express');
+const cors = require("cors");
+const rootRouter = require("./routes/index");
+
 const app = express();
-app.use(express.json());
+
 app.use(cors());
-const mainRouter = require("./routes/index");
+app.use(express.json());
 
-Router.use("/api/v1", mainRouter);
+app.use("/api/v1", rootRouter);
 
-
-app.listen(port);
+app.listen(3000);
