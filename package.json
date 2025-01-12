@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- 
   "author": "hemantch01",
   "license": "ISC",
   "dependencies": {
@@ -14,6 +13,7 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.3",
+    "recoil": "^0.7.7",
     "zod": "^3.24.1"
   }
 }
