@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export function BottomWaring({label, buttonText, to})
+export const BottomWaring = ({label, buttonText, to})=>
 {
     return <div className="py-2 text-sm flex justify-center">
         <div>
