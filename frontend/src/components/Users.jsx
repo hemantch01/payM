@@ -8,6 +8,7 @@ export const Users = () => {
     const users = useRecoilValue(userSelector); 
     console.log(users)// Get filtered users from the selector
     const [userFilter, setFilter] = useRecoilState(filterAtom); // Manage the search filter
+    
 
     return (
         <div>
@@ -15,7 +16,7 @@ export const Users = () => {
             <SingleInputbox
                 onChange={(e) => setFilter(e.target.value)} // Update the filter atom
                 onlabel={"Search Users"}
-                placeholder={"e.g., Hemant Kumar (partial name allowed)"}
+                placeholder={"e.g., Hemant Kumar (no need to write full name)"}
             />
             <div className="py-3">
                 {users.length > 0 ? (
